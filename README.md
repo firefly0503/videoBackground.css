@@ -29,5 +29,5 @@ Then link a `css/videobg.css` file to make full-screen processing.
 ![Moon](http://www.nousbuild.org/demo/githubimages/videobackground.jpg)
 
 ## Legal
-Copyright (c) 2016： [firefly0503](https://github.com/firefly0503)</br>
+Copyright (c) 2016： [windmill0503](https://github.com/windmill0503)</br>
 Show it on Code Studio [this article](http://www.nousbuild.org/codeu/background-video/)
