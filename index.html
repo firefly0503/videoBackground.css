@@ -5,38 +5,46 @@
 <title>Demo | Video Cover</title>
 <link rel="stylesheet" href="css/videobg.css" />
 <style>
-@media screen and (max-width: 500px) { 
-  div{width:70%;} 
+@media screen and (max-width: 500px) {
+div {
+	width: 70%;
 }
+}
+
 @media all and (max-device-width: 800px) {
-  body { background: url("images/moon.jpg") #000 no-repeat center center fixed; background-size: cover; }
-  #bgvid, #polina button { display: none; }
-  div{width:70%;} 
+body {
+	background: url("images/moon.jpg") #000 no-repeat center center fixed;
+	background-size: cover;
+}
+#bgvid, #polina button {
+	display: none;
+}
+div {
+	width: 70%;
+}
 }
 </style>
 </head>
-    
+
 <body>
 <!--insert video-->
-<video autoplay loop poster="images/moon.jpg" id="bgvid">
-<source src="images/moon.webm" type="video/webm">
-<source src="images/moon.mp4" type="video/mp4">
-</video> 
-
+<video autoplay loop poster="images/moon.jpg" id="moon">
+  <source src="images/moon.webm" type="video/webm">
+  <source src="images/moon.mp4" type="video/mp4">
+</video>
 <div id="polina">
-<h1>Moon</h1>
-<p>384,000,000 meters far away from us
-<p><a href="http://www.nousbuild.org/codeu/background-video/">return to article</a>
-<p>The Moon is a solid natural satellite around the Earth, but also natural celestial bodies closest to the Earth. 
-About 4.6 billion years of age. Like the Moon and the earth crust, mantle, core and hierarchical structure. 
-The moon itself does not glow only reflects sunlight. Due to the extremely thin atmosphere on the Moon, plus the lunar surface material heat capacity and thermal conductivity is low, thus the lunar surface a large temperature difference between day and night. 
-The moon will always be toward us, that used to be known as positive.</p> 
-<p>The other side, except on the lunar surface around the edge of the area beyond the visible due to libration, and most cannot be seen from Earth on the back of the moon.</p>
-<button>Pause</button>
+  <h1>Moon</h1>
+  <p>384,000,000 meters far away from us
+  <p><a href="http://www.nousbuild.org/codeu/background-video/">return to article</a>
+  <p>The Moon is a solid natural satellite around the Earth, but also natural celestial bodies closest to the Earth. 
+    About 4.6 billion years of age. Like the Moon and the earth crust, mantle, core and hierarchical structure. 
+    The moon itself does not glow only reflects sunlight. Due to the extremely thin atmosphere on the Moon, plus the lunar surface material heat capacity and thermal conductivity is low, thus the lunar surface a large temperature difference between day and night. 
+    The moon will always be toward us, that used to be known as positive.</p>
+  <p>The other side, except on the lunar surface around the edge of the area beyond the visible due to libration, and most cannot be seen from Earth on the back of the moon.</p>
+  <button>Pause</button>
 </div>
-    
 <script>
-var video = document.getElementById("bgvid"),
+var video = document.getElementById("moon"),
 pauseButton = document.querySelector("#polina button");
 
 function vidFade() {
@@ -72,6 +80,5 @@ video.play();
   ga('create', 'UA-9896842-2', 'auto');
   ga('send', 'pageview');
 </script>
-
 </body>
 </html>

@@ -4,7 +4,7 @@ Making video as a page background
 ## Installation
 ### HTML
 Insert into `<body>:`</br>
-`<video autoplay loop poster="images/moon.jpg" id="bgvid">`</br>
+`<video autoplay loop poster="images/moon.jpg" id="moon">`</br>
 `<source src="images/moon.webm" type="video/webm">`</br>
 `<source src="images/moon.mp4" type="video/mp4">`</br>
 `</video> `
