@@ -1,4 +1,4 @@
-# videoBackground.css
+# Video Background
 Making video as a page background
 
 ## Installation
