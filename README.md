@@ -1,9 +1,9 @@
 # Video Background
-Making video as a page background
+一个可以将视频作为背景的 CSS 样式。
 
-## Installation
+## 使用
 ### HTML
-Insert into `<body>:`
+在 `<body>` 主体中插入多种格式的背景视频：
 
 ```html
 <video autoplay loop poster="images/moon.jpg" id="moon">
@@ -13,27 +13,28 @@ Insert into `<body>:`
 ```
 
 ### CSS
-Add a short css into`<body>:`
+使用如下 CSS 样式：
 
-```html
-<style>
+```css
 @media screen and (max-width: 500px) {
-div{width:70%;}
+	div{width:70%;}
 }
 @media all and (max-device-width: 800px) {
-body { background: url("images/moon.jpg") #000 no-repeat center center fixed; background-size: cover; }
-#bgvid, #polina button { display: none; }
-div{width:70%;}
+	body {
+    background: url("images/moon.jpg") #000 no-repeat center center fixed; 		
+    background-size: cover;
+  }
+	#bgvid, #polina button { display: none; }
+	div{width:70%;}
 }
-</style>
 ```
 
-Then link a `css/videobg.css` file to make full-screen processing.
+#### Demo
 
-## Demo
-[Demo Page](http://www.nousbuild.org/demo/background-video-cover/index.html)</br>
-![Moon](http://img.nousbuild.top/github/videobackground.jpg)
+[Demo Page](https://windmill0503.github.io/video-background/index.html)
 
-## Legal
+![Moon](assets/videobackground.jpg)
+
+#### Legal
+
 Copyright (c) 2016： [windmill0503](https://github.com/windmill0503)
-Show it on Code Studio [this article](http://www.nousbuild.org/codeu/background-video/)
