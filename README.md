@@ -31,7 +31,7 @@
 
 #### Demo
 
-[Demo Page](https://windmill0503.github.io/video-background/index.html)
+[Demo Page](https://windmill0503.github.io/demo/video-background/index.html)
 
 ![Moon](assets/videobackground.jpg)
 
