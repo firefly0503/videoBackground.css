@@ -1,84 +1,93 @@
 <!doctype html>
 <html lang=en>
-<head>
-<meta charset=utf-8>
-<title>Demo | Video Cover</title>
-<link rel="stylesheet" href="css/videobg.css" />
-<style>
-@media screen and (max-width: 500px) {
-div {
-	width: 70%;
-}
-}
 
-@media all and (max-device-width: 800px) {
-body {
-	background: url("images/moon.jpg") #000 no-repeat center center fixed;
-	background-size: cover;
-}
-#bgvid, #polina button {
-	display: none;
-}
-div {
-	width: 70%;
-}
-}
-</style>
+<head>
+  <meta charset=utf-8>
+  <title>Demo - Moon Video</title>
+  <link rel="stylesheet" href="css/videobg.css" />
+  <style>
+    @media screen and (max-width: 500px) {
+      div {
+        width: 70%;
+      }
+    }
+
+    @media all and (max-device-width: 800px) {
+      body {
+        background: url("images/moon.jpg") #000 no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      #bgvid,
+      #polina button {
+        display: none;
+      }
+
+      div {
+        width: 70%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<!--insert video-->
-<video autoplay loop poster="images/moon.jpg" id="moon">
-  <source src="images/moon.webm" type="video/webm">
-  <source src="images/moon.mp4" type="video/mp4">
-</video>
-<div id="polina">
-  <h1>Moon</h1>
-  <p>384,000,000 meters far away from us
-  <p><a href="http://www.nousbuild.org/codeu/background-video/">return to article</a>
-  <p>The Moon is a solid natural satellite around the Earth, but also natural celestial bodies closest to the Earth. 
-    About 4.6 billion years of age. Like the Moon and the earth crust, mantle, core and hierarchical structure. 
-    The moon itself does not glow only reflects sunlight. Due to the extremely thin atmosphere on the Moon, plus the lunar surface material heat capacity and thermal conductivity is low, thus the lunar surface a large temperature difference between day and night. 
-    The moon will always be toward us, that used to be known as positive.</p>
-  <p>The other side, except on the lunar surface around the edge of the area beyond the visible due to libration, and most cannot be seen from Earth on the back of the moon.</p>
-  <button>Pause</button>
-</div>
-<script>
-var video = document.getElementById("moon"),
-pauseButton = document.querySelector("#polina button");
+  <!--insert video-->
+  <video autoplay loop poster="images/moon.jpg" id="moon">
+    <source src="images/moon.webm" type="video/webm">
+    <source src="images/moon.mp4" type="video/mp4">
+  </video>
+  <div id="polina">
+    <h1>Moon</h1>
+    <p>384,000,000 meters far away from us
+    <p><a href="http://www.nousbuild.org/codeu/background-video/">return to article</a>
+    <p>The Moon is a solid natural satellite around the Earth, but also natural celestial bodies closest to the Earth.
+      About 4.6 billion years of age. Like the Moon and the earth crust, mantle, core and hierarchical structure.
+      The moon itself does not glow only reflects sunlight. Due to the extremely thin atmosphere on the Moon, plus the
+      lunar surface material heat capacity and thermal conductivity is low, thus the lunar surface a large temperature
+      difference between day and night.
+      The moon will always be toward us, that used to be known as positive.</p>
+    <p>The other side, except on the lunar surface around the edge of the area beyond the visible due to libration, and
+      most cannot be seen from Earth on the back of the moon.</p>
+    <button>Pause</button>
+  </div>
+  <script>
+    var video = document.getElementById("moon"),
+      pauseButton = document.querySelector("#polina button");
 
-function vidFade() {
-  video.classList.add("stopfade");
-}
+    function vidFade() {
+      video.classList.add("stopfade");
+    }
 
-video.addEventListener('ended', function()
-{
-// only functional if "loop" is removed 
-video.pause();
-vidFade();
-}, false); 
- 
-pauseButton.addEventListener("click", function() {
-  video.classList.toggle("stopfade");
-  if (video.paused) {
-    video.play();
-    pauseButton.innerHTML = "Pause";
-  } else {
-    video.pause();
-    pauseButton.innerHTML = "Paused";
-  }
-}, false);
+    video.addEventListener('ended', function () {
+      // only functional if "loop" is removed 
+      video.pause();
+      vidFade();
+    }, false);
 
-video.addEventListener('touchstart', function(e) {
-e.preventDefault();
-video.play();
-})
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','http://google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-9896842-2', 'auto');
-  ga('send', 'pageview');
-</script>
+    pauseButton.addEventListener("click", function () {
+      video.classList.toggle("stopfade");
+      if (video.paused) {
+        video.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        video.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    }, false);
+
+    video.addEventListener('touchstart', function (e) {
+      e.preventDefault();
+      video.play();
+    })
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'http://google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-9896842-2', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
+
 </html>
