@@ -41,4 +41,4 @@
 
 ### 3. 许可
 
-[MIT License](https://github.com/windmill0503/videoBackground/blob/master/LICENSE)
+[MIT License](https://github.com/pudding0503/videoBackground/blob/master/LICENSE)
