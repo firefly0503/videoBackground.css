@@ -35,7 +35,7 @@
 
 ### 2. 一个演示
 
-一个演示页面：[点击这里](https://github.nousbuild.com/demo/video-background/index.html)
+一个演示页面：[点击这里](https://pudding0503.github.io/videoBackground/index.html)
 
 ![Moon](assets/videobackground.jpg)
 
