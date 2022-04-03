@@ -4,7 +4,7 @@
 <head>
   <meta charset=utf-8>
   <title>Demo - Moon Video</title>
-  <link rel="stylesheet" href="css/videobg.css" />
+  <link rel="stylesheet" href="videobg.css" />
   <style>
     @media screen and (max-width: 500px) {
       div {
@@ -14,7 +14,7 @@
 
     @media all and (max-device-width: 800px) {
       body {
-        background: url("images/moon.jpg") #000 no-repeat center center fixed;
+        background: url("moon.jpg") #000 no-repeat center center fixed;
         background-size: cover;
       }
 
@@ -32,14 +32,13 @@
 
 <body>
   <!--insert video-->
-  <video autoplay loop poster="images/moon.jpg" id="moon">
-    <source src="images/moon.webm" type="video/webm">
-    <source src="images/moon.mp4" type="video/mp4">
+  <video autoplay loop poster="moon.jpg" id="moon">
+    <source src="moon.mp4" type="video/mp4">
   </video>
   <div id="polina">
     <h1>Moon</h1>
     <p>384,000,000 meters far away from us
-    <p><a href="http://www.nousbuild.org/codeu/background-video/">return to article</a>
+    <p><a href="https://www.nousbuild.org/codeu/background-video/">return to article</a>
     <p>The Moon is a solid natural satellite around the Earth, but also natural celestial bodies closest to the Earth.
       About 4.6 billion years of age. Like the Moon and the earth crust, mantle, core and hierarchical structure.
       The moon itself does not glow only reflects sunlight. Due to the extremely thin atmosphere on the Moon, plus the
@@ -79,14 +78,6 @@
       e.preventDefault();
       video.play();
     })
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'http://google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-9896842-2', 'auto');
-    ga('send', 'pageview');
   </script>
 </body>
 

@@ -8,9 +8,8 @@
 在 `<body>` 主体中插入多种格式的背景视频：
 
 ```html
-<video autoplay loop poster="images/moon.jpg" id="moon">
-	<source src="images/moon.webm" type="video/webm">
-	<source src="images/moon.mp4" type="video/mp4">
+<video autoplay loop poster="moon.jpg" id="moon">
+	<source src="moon.mp4" type="video/mp4">
 </video>
 ```
 
@@ -25,9 +24,10 @@
 
 @media all and (max-device-width: 800px) {
 	body {
-    background: url("images/moon.jpg") #000 no-repeat center center fixed; 		
+    background: url("moon.jpg") #000 no-repeat center center fixed; 		
     background-size: cover;
   }
+  
 	#bgvid, #polina button { display: none; }
 	div{width:70%;}
 }
@@ -37,7 +37,7 @@
 
 一个演示页面：[点击这里](https://pudding0503.github.io/videoBackground/index.html)
 
-![Moon](assets/videobackground.jpg)
+![Moon](screenshot.jpg)
 
 ### 3. 许可
 
